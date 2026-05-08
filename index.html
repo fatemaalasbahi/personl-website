@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="description"
+      content="Personal portfolio website: projects, skills, experience, and contact."
+    />
+    <title>Your Name — Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-elevate="false">
+      <nav class="nav container" aria-label="Primary">
+        <a class="brand" href="#home">
+          <span class="brand-mark" aria-hidden="true">YN</span>
+          <span class="brand-text">Your Name</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-controls="nav-links"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open menu</span>
+          <span aria-hidden="true" class="nav-toggle-icon"></span>
+        </button>
+
+        <div class="nav-links" id="nav-links">
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#skills">Skills</a>
+          <a class="nav-link" href="#experience">Experience</a>
+          <a class="nav-link" href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="home" class="section hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Hello, I’m</p>
+            <h1 class="hero-title">Your Name</h1>
+            <p class="hero-subtitle">Student Developer • Frontend-focused</p>
+            <p class="hero-lede">
+              I build clean, responsive websites and small web apps. I enjoy
+              turning ideas into simple, user-friendly experiences.
+            </p>
+
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="#projects">View projects</a>
+              <a class="btn btn-ghost" href="#contact">Contact me</a>
+            </div>
+
+            <div class="hero-links" aria-label="Social links">
+              <a class="chip" href="#" rel="noreferrer" target="_blank">GitHub</a>
+              <a class="chip" href="#" rel="noreferrer" target="_blank">LinkedIn</a>
+              <a class="chip" href="mailto:you@example.com">you@example.com</a>
+            </div>
+          </div>
+
+          <div class="hero-card" aria-label="Profile card">
+            <div class="avatar" aria-hidden="true">
+              <span>Photo</span>
+            </div>
+            <div class="hero-card-body">
+              <p class="hero-card-title">Open to opportunities</p>
+              <p class="hero-card-text">
+                Interested in internships, junior roles, and collaborative
+                projects.
+              </p>
+              <ul class="hero-facts" aria-label="Quick facts">
+                <li><span class="dot" aria-hidden="true"></span> Based in: Your City</li>
+                <li><span class="dot" aria-hidden="true"></span> Timezone: Your TZ</li>
+                <li>
+                  <span class="dot" aria-hidden="true"></span> Focus: HTML • CSS • JS
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>About</h2>
+            <p class="muted">
+              A short intro you can personalize in 2 minutes.
+            </p>
+          </div>
+
+          <div class="card">
+            <p>
+              I’m a developer-in-training who enjoys building modern web
+              interfaces. I care about clean layouts, accessible design, and
+              writing code that’s easy to maintain. Right now, I’m improving my
+              JavaScript fundamentals and building projects to learn by doing.
+            </p>
+            <p>
+              Outside of coding, I like learning new tools, collaborating with
+              others, and documenting what I learn.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Projects</h2>
+            <p class="muted">
+              Add 3–6 projects. Each card should answer: What is it? What tech?
+              What did you do?
+            </p>
+          </div>
+
+          <div class="grid cards">
+            <article class="card project">
+              <div class="project-media" aria-hidden="true">
+                <span>Screenshot</span>
+              </div>
+              <div class="project-top">
+                <h3>Project One</h3>
+                <p class="muted">A short sentence about what it does.</p>
+              </div>
+              <ul class="tags" aria-label="Tech used">
+                <li class="tag">HTML</li>
+                <li class="tag">CSS</li>
+                <li class="tag">JavaScript</li>
+              </ul>
+              <p>
+                Built a responsive UI and implemented core interactions.
+                Prioritized accessibility and clean layout.
+              </p>
+              <div class="actions">
+                <a class="link" href="#" target="_blank" rel="noreferrer"
+                  >Code (GitHub)</a
+                >
+                <a class="link" href="#" target="_blank" rel="noreferrer">Live demo</a>
+              </div>
+            </article>
+
+            <article class="card project">
+              <div class="project-media" aria-hidden="true">
+                <span>Screenshot</span>
+              </div>
+              <div class="project-top">
+                <h3>Project Two</h3>
+                <p class="muted">Another project description goes here.</p>
+              </div>
+              <ul class="tags" aria-label="Tech used">
+                <li class="tag">JavaScript</li>
+                <li class="tag">API</li>
+                <li class="tag">UI</li>
+              </ul>
+              <p>
+                Practiced fetching data, handling loading states, and displaying
+                results in a simple interface.
+              </p>
+              <div class="actions">
+                <a class="link" href="#" target="_blank" rel="noreferrer"
+                  >Code (GitHub)</a
+                >
+                <a class="link" href="#" target="_blank" rel="noreferrer">Live demo</a>
+              </div>
+            </article>
+
+            <article class="card project">
+              <div class="project-media" aria-hidden="true">
+                <span>Screenshot</span>
+              </div>
+              <div class="project-top">
+                <h3>Project Three</h3>
+                <p class="muted">What problem does it solve?</p>
+              </div>
+              <ul class="tags" aria-label="Tech used">
+                <li class="tag">CSS</li>
+                <li class="tag">Responsive</li>
+                <li class="tag">Accessibility</li>
+              </ul>
+              <p>
+                Focused on layout, typography, and mobile-first design. Improved
+                contrast and keyboard navigation.
+              </p>
+              <div class="actions">
+                <a class="link" href="#" target="_blank" rel="noreferrer"
+                  >Code (GitHub)</a
+                >
+                <a class="link" href="#" target="_blank" rel="noreferrer">Live demo</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Skills</h2>
+            <p class="muted">Group skills so it’s easy to scan.</p>
+          </div>
+
+          <div class="grid two">
+            <div class="card">
+              <h3 class="card-title">Frontend</h3>
+              <ul class="list">
+                <li>HTML5 (semantic)</li>
+                <li>CSS (Flexbox, Grid)</li>
+                <li>JavaScript (DOM, fetch)</li>
+                <li>Responsive design</li>
+                <li>Accessibility basics</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h3 class="card-title">Tools</h3>
+              <ul class="list">
+                <li>Git & GitHub</li>
+                <li>VS Code / Cursor</li>
+                <li>Chrome DevTools</li>
+                <li>Figma (basic)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Experience</h2>
+            <p class="muted">Education + work/internships/certificates.</p>
+          </div>
+
+          <div class="stack">
+            <article class="card timeline">
+              <div class="timeline-head">
+                <h3>Program / School Name</h3>
+                <p class="muted">2025 — 2026</p>
+              </div>
+              <ul class="list">
+                <li>Focused on web development fundamentals.</li>
+                <li>Built projects using HTML, CSS, and JavaScript.</li>
+                <li>Practiced teamwork and presenting work.</li>
+              </ul>
+            </article>
+
+            <article class="card timeline">
+              <div class="timeline-head">
+                <h3>Volunteer / Internship / Club</h3>
+                <p class="muted">2026</p>
+              </div>
+              <ul class="list">
+                <li>Describe what you did using action verbs and outcomes.</li>
+                <li>Example: improved a landing page layout and mobile UX.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Contact</h2>
+            <p class="muted">Best way to reach you + socials.</p>
+          </div>
+
+          <div class="grid two">
+            <div class="card">
+              <h3 class="card-title">Let’s talk</h3>
+              <p>
+                Email me and I’ll respond as soon as I can.
+              </p>
+              <div class="contact-actions">
+                <a class="btn btn-primary" href="mailto:you@example.com">Email me</a>
+                <a class="btn btn-ghost" href="#" target="_blank" rel="noreferrer"
+                  >LinkedIn</a
+                >
+              </div>
+              <p class="muted small">
+                Tip: replace the placeholder links with your real profiles.
+              </p>
+            </div>
+
+            <form class="card form" aria-label="Contact form" novalidate>
+              <h3 class="card-title">Quick message (optional)</h3>
+              <p class="muted small">
+                This is a UI-only form by default (no backend). You can connect
+                it later using Formspree/Netlify Forms.
+              </p>
+
+              <label class="field">
+                <span>Name</span>
+                <input name="name" autocomplete="name" placeholder="Your name" />
+              </label>
+
+              <label class="field">
+                <span>Email</span>
+                <input
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  placeholder="you@example.com"
+                />
+              </label>
+
+              <label class="field">
+                <span>Message</span>
+                <textarea
+                  name="message"
+                  rows="4"
+                  placeholder="Write a short message…"
+                ></textarea>
+              </label>
+
+              <button class="btn btn-primary" type="button" data-toast>
+                Send (demo)
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="muted small">© <span id="year"></span> Your Name. All rights reserved.</p>
+        <a class="muted small" href="#home">Back to top</a>
+      </div>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite" aria-atomic="true" hidden>
+      <div class="toast-inner">
+        <p class="toast-title">Demo form</p>
+        <p class="toast-text">This form isn’t connected yet.</p>
+        <button class="toast-close" type="button">Close</button>
+      </div>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
